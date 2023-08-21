@@ -1,75 +1,18 @@
 #!/usr/bin/env node
+/* eslint-disable import/extensions */
 /* eslint-disable no-unused-vars */
 /* eslint-disable import/no-extraneous-dependencies */
 
 import chalk from 'chalk';
-import inquirer from 'inquirer';
-import { exec, spawn } from 'child_process';
-import { createSpinner } from 'nanospinner';
 import { existsSync } from 'fs';
+import { inputCheckbox, inputList, inputText } from '../lib/inquirer.js';
+import { wrapExec } from '../lib/fs.js';
 
 const { log } = console;
 
-// Custom inquirer prompts
-const inquirerPromise = (prompt) => new Promise((resolve, reject) => {
-  prompt.then((answer) => {
-    resolve(answer.input);
-  }).catch((err) => {
-    reject(err);
-  });
-});
-
-const inputText = (message, defaultValue) => inquirerPromise(inquirer.prompt([
-  {
-    name: 'input',
-    message,
-    default: defaultValue,
-  },
-]));
-
-const inputList = (message, choices) => inquirerPromise(inquirer.prompt([
-  {
-    name: 'input',
-    message,
-    type: 'list',
-    choices,
-    default: choices[0],
-  },
-]));
-
-const inputCheckbox = (message, checked) => inquirerPromise(inquirer.prompt([
-  {
-    name: 'input',
-    message,
-    type: 'confirm',
-    default: checked,
-  },
-]));
-
-const wrapExec = (command, params, message) => {
-  const spinner = createSpinner(message).start();
-
-  return new Promise((resolve, reject) => {
-    exec(`${command} ${params.join(' ')}`, (err, stdout, stderr) => {
-      if (err) {
-        spinner.error({ text: message });
-        reject(err);
-        return;
-      }
-
-      if (stderr) {
-        spinner.error({ text: message });
-        reject(stderr);
-        return;
-      }
-
-      spinner.success({ text: message });
-      resolve(stdout);
-    });
-  });
-};
-
-// Main function
+/**
+ * Main function
+ */
 const main = async () => {
   log(chalk.bold('Hello World!'));
 

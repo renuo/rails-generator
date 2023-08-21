@@ -2,15 +2,16 @@
 	"name": "rails-generator",
 	"version": "1.0.0",
 	"description": "",
-	"main": "bin/index.mjs",
+	"main": "bin/index.js",
+	"type": "module",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
-		"lint": "eslint bin/*.mjs --fix"
+		"lint": "eslint --fix"
 	},
 	"author": "CuddlyBunion341",
 	"license": "MIT",
 	"bin": {
-		"run": "./bin/index.mjs"
+		"run": "./bin/index.js"
 	},
 	"dependencies": {
 		"boxen": "4.0",
