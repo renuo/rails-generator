@@ -1,0 +1,19 @@
+{
+	"name": "rails-generator",
+	"version": "1.0.0",
+	"description": "",
+	"main": "bin/index.mjs",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "CuddlyBunion341",
+	"license": "MIT",
+	"bin": {
+		"run": "./bin/index.mjs"
+	},
+	"dependencies": {
+		"boxen": "4.0",
+		"chalk": "2.4",
+		"inquirer": "^9.2.10"
+	}
+}
