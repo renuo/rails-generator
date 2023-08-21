@@ -15,10 +15,13 @@
 	"dependencies": {
 		"boxen": "4.0",
 		"chalk": "2.4",
+		"inquirer": "^9.2.10",
+		"nanospinner": "^1.1.0"
 	},
 	"devDependencies": {
 		"eslint": "^8.47.0",
 		"eslint-config-airbnb-base": "^15.0.0",
 		"eslint-plugin-import": "^2.28.1",
+		"exec": "^0.2.1"
 	}
 }
