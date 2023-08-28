@@ -3,10 +3,10 @@
 	"version": "1.0.0",
 	"description": "",
 	"main": "bin/index.js",
-	"type": "module",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
-		"lint": "eslint --fix"
+		"lint": "eslint --fix",
+		"build": "npx tsc"
 	},
 	"author": "CuddlyBunion341",
 	"license": "MIT",
@@ -14,15 +14,28 @@
 		"run": "./bin/index.js"
 	},
 	"dependencies": {
+		"@types/figlet": "^1.5.6",
+		"@types/inquirer": "^9.0.3",
 		"boxen": "4.0",
 		"chalk": "2.4",
+		"commander": "^11.0.0",
+		"execa": "^8.0.1",
 		"inquirer": "^9.2.10",
 		"nanospinner": "^1.1.0"
 	},
 	"devDependencies": {
-		"eslint": "^8.47.0",
+		"@types/node": "^20.5.6",
+		"@typescript-eslint/eslint-plugin": "^6.5.0",
+		"@typescript-eslint/parser": "^6.5.0",
+		"eslint": "^8.48.0",
 		"eslint-config-airbnb-base": "^15.0.0",
+		"eslint-config-standard-with-typescript": "^39.0.0",
+		"eslint-plugin-airbnb": "^0.0.1-security",
 		"eslint-plugin-import": "^2.28.1",
-		"exec": "^0.2.1"
+		"eslint-plugin-n": "^16.0.2",
+		"eslint-plugin-promise": "^6.1.1",
+		"exec": "^0.2.1",
+		"figlet": "^1.6.0",
+		"typescript": "^5.2.2"
 	}
 }

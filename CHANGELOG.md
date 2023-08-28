@@ -1,5 +1,12 @@
 # CHANGELOG.md
 
+## 1.0.1
+
+Features
+
+  - Added first class support for typescript
+  - Added commander
+
 ## 0.1.0
 
 Features
