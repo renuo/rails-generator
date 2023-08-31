@@ -1,11 +1,10 @@
 {
   "compilerOptions": {
     "rootDir": "src",
-    "outDir": "dist",
     "strict": true,
     "target": "ES6",
     "lib": [
-      // "ESNext",
+      "ESNext"
     ],
     "module": "ESNext",
     "esModuleInterop": true,
