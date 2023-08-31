@@ -1,4 +1,5 @@
-#!/usr/bin/env node
+#!/usr/bin/env bun
+
 
 /**
  * @file Creates a new commander program for configuring a Rails application

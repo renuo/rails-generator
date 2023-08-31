@@ -3,11 +3,14 @@
     "rootDir": "src",
     "outDir": "dist",
     "strict": true,
-    "target": "es6",
-    "module": "commonjs",
-    "sourceMap": true,
+    "target": "ES6",
+    "lib": [
+      // "ESNext",
+    ],
+    "module": "ESNext",
     "esModuleInterop": true,
-    "moduleResolution": "node",
+    "moduleResolution": "Node",
+    "noEmit": true,
     "plugins": [
       {
         "name": "typescript-eslint",
