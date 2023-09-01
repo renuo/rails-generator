@@ -21,5 +21,5 @@ export function createApp (name: string): void {
     .map((v) => `--skip-${v}`)
     .join(' ')
 
-  execSync(`rails new ${name} ${skips} --minmal`, { stdio: 'inherit' })
+  execSync(`rails new ${name} ${skips} --minimal`, { stdio: 'inherit' })
 }
