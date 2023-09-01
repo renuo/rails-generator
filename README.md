@@ -13,6 +13,7 @@ a small CLI utility for configuring an existing project.
 2. Change into the project directory: `cd rails-generator`
 3. Install the dependencies: `bun install`
 4. Add the `bin` directory to your `PATH` variable in your `.zshrc` or `.bashrc` `export PATH=$PATH:PATH_TO_CRAILS/bin`
+5. Source the autocompletion script in your `.zshrc` or `.bashrc` `source PATH_TO_CRAILS/bin/_crails`
 
 ## Usage
 

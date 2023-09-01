@@ -1,11 +1,17 @@
 # CHANGELOG.md
 
-## 1.0.1
+## 0.1.2
+
+Features
+  - Added autocomplete for the CLI
+
+## 0.1.1
 
 Features
 
   - Added first class support for typescript
   - Added commander
+  - Replaced Node.js with Bun
 
 ## 0.1.0
 
