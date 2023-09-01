@@ -1,5 +1,15 @@
+/**
+ * @file Contains the logic for the create command
+ * @description Creates a minimal Rails application with the specified name
+ * @author CuddlyBunion341
+ */
+
 import { execSync } from 'child_process'
 
+/**
+ * Creates a new Rails application with the specified name
+ * @param name The name of the Rails application
+ */
 export function createApp (name: string): void {
   const skips = [
     'action-mailer',

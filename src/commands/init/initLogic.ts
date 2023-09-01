@@ -1,6 +1,16 @@
+/**
+ * @file Contains the logic for the init command
+ * @description Uses small units of logic for I/O and business logic regarding the init command
+ * @author CuddlyBunion341
+ */
+
 import inquirer from 'inquirer'
 import chalk from 'chalk'
 
+/**
+ * Gets user preferences for configuring a Rails application with inquirer
+ * @returns A promise that resolves to an object containing the user's preferences
+ */
 export async function getUserPreferences (): Promise<any> {
   return await inquirer.prompt([
     {
